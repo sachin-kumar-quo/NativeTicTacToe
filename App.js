@@ -155,9 +155,9 @@ const App= () => {
       </View>
       {winDisplay()}
       {onFilledMessage()}
-      <View style={{alignSelf:'center',marginVertical:20,backgroundColor:"#6ecfff",borderRadius:10,borderColor:"red",borderWidth:2}}>
+      {!winMessage && <View style={{alignSelf:'center',marginVertical:20,backgroundColor:"#6ecfff",borderRadius:10,borderColor:"red",borderWidth:2}}>
         <Text style={{fontSize:40}}>its {isCircle ? 'circle' : 'cross'} turn</Text>
-      </View>
+      </View>}
       <View style={{backgroundColor:"#ff7300",marginHorizontal:30,borderRadius:10,borderColor:"red",borderWidth:2}}>
         <Button style={{color:"blue"}} title="Reset Game" onPress={resetGame} />
       </View>

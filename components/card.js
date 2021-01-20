@@ -21,7 +21,7 @@ export default Card;
 const styles = StyleSheet.create({
     cardImage : {
         margin:5,
-        width:120,
+        width:110,
         height:120,
     }
 })
